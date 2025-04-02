@@ -1,0 +1,526 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+:root {
+  --main-color: #deab5f;
+  --secondary-color: #312e2e;
+}
+
+/*utilities*/
+button {
+  padding: 10px 30px;
+  background-color: var(--main-color);
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 20px; /* Adjust text size */
+  font-weight: 700; /* Use bold value (700) */
+  font-family: "Playfair Display", serif;
+}
+
+/*resets*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+/*navbar*/
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #252527;
+  font-family: sans-serif;
+  padding-top: 15px;
+}
+
+li {
+  display: inline;
+  list-style: none;
+}
+
+li a {
+  color: #252527;
+  text-decoration: none;
+  margin-left: 40px;
+  padding-bottom: 5px;
+}
+
+li a:hover {
+  border-bottom: 6px solid var(--main-color);
+  cursor: pointer;
+}
+
+/*navbar end*/
+
+/*header*/
+header {
+  background: url(media/Instant_po48main_1080x.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+  color: #fdc596;
+  position: relative;
+}
+
+.main-heading,
+.primary-heading {
+  position: absolute;
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  word-spacing: 2px;
+}
+
+.main-heading {
+  top: 60px;
+  left: 165px;
+}
+
+.primary-heading {
+  top: 115px;
+  left: 350px;
+}
+
+.main-heading::after,
+.primary-heading::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  right: 0;
+  width: 70%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.871);
+}
+
+.main-btn {
+  position: absolute; /* Ensure it moves freely */
+  background-color: white;
+  font-size: 20px;
+  top: 478px;
+  left: 160px;
+  padding: 18px 38px;
+}
+/*header end*/
+
+/*Thee section*/
+.coffee-info {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.info-box {
+  width: 30%;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.info-box img {
+  width: 100px;
+  height: auto;
+}
+
+.info-box a {
+  display: block;
+  color: #1774ff;
+  margin-top: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.discount-code {
+  background-color: #eff5ff;
+  color: #1774ff;
+  border: none;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+/*Thee section end*/
+
+/*Our Products*/
+#our-product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #d7e5fa;
+}
+
+.img {
+  width: 400px;
+  height: 400px;
+  background: url(media/6.3Flavours-min_1080x.webp);
+  background-position: center;
+  background-size: cover;
+}
+
+.title-style {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-family: "Playfair Display", serif;
+  font-size: 4rem;
+  color: #703a7e;
+  transform: translateX(-100px);
+}
+
+.line {
+  width: 100px;
+  height: 2px;
+  background: #daadd3;
+  transform: translateX(-120px);
+}
+
+.section-content p {
+  max-width: 500px;
+  color: #33578d;
+  font-family: sans-serif;
+  line-height: 20px;
+  margin: 20px 0;
+}
+
+/*Our Products end*/
+
+/*as seen on */
+.as-seen-on {
+  background-color: #f2f2f2;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.brands {
+  display: flex;
+  align-items: center;
+  gap: 170px; /* Increased gap for better spacing */
+}
+
+.as-seen-text {
+  font-weight: bold;
+  color: #000000;
+  font-size: 22px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-right: 40px; /* Creates more space between "AS SEEN ON" and brands */
+}
+
+.brand {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+}
+
+/*coffee start*/
+.coffee-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #d7e5fa;
+}
+
+.img-2 {
+  width: 400px;
+  height: 400px;
+}
+
+.title-two {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  color: #703a7e;
+}
+
+.content-section p {
+  max-width: 500px;
+  color: #33578d;
+  font-family: sans-serif;
+  line-height: 20px;
+  margin: 20px 0;
+}
+
+.line-two {
+  margin-left: 13px;
+  margin-top: -45px;
+  width: 100px;
+  height: 2px;
+  background: #daadd3;
+}
+
+/*coffee end*/
+
+/*Shop section */
+.shop-section {
+  background-color: #f5f5f5;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop-section h4 {
+  margin-bottom: 10px;
+}
+
+.shop-section h2 {
+  margin-bottom: 20px;
+}
+
+.shop-button {
+  background-color: #1774ff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/*Products*/
+.products {
+  background-color: #d7e5fa;
+}
+
+.title-three {
+  font-size: 4rem;
+  margin-left: 10rem;
+  margin-bottom: 10rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card {
+  border: 2px solid var(--main-color);
+  padding: 0 20px;
+  height: 400px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.card-img {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: -60px;
+}
+
+.img-one {
+  background: url(media/jpg_1_1080x.webp);
+  background-position: center;
+  background-size: cover;
+}
+.img-two {
+  background: url(media/Filterkaapi100gjar_1080x.webp);
+  background-position: center;
+  background-size: cover;
+}
+.img-three {
+  background: url(media/po48main_1080x.webp);
+  background-position: center;
+  background-size: cover;
+}
+
+.card-title {
+  color: #001a5a;
+  font-family: sans-serif;
+  margin-top: 50px;
+}
+
+.card .items p {
+  color: #33578d;
+  margin: 20px 0;
+  font-family: sans-serif;
+}
+
+/*products end*/
+
+/*footer*/
+footer {
+  height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  background: #ffffff;
+  font-family: sans-serif;
+}
+
+footer .container {
+  margin: 20px;
+  max-width: 300px;
+  text-align: center;
+}
+
+footer .heading-info {
+  margin-bottom: 20px;
+}
+
+footer p {
+  line-height: 25px;
+}
+
+span {
+  color: var(--main-color);
+}
+
+footer .para {
+  color: #000000;
+  font-family: sans-serif;
+  text-align: center;
+  width: 100%;
+  bottom: 10px;
+}
+
+/*project end*/
+
+/*media queries*/
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  li {
+    margin: 10px 0;
+  }
+
+  header {
+    height: 50vh;
+  }
+
+  .main-heading {
+    top: 30px;
+    left: 20px;
+    font-size: 1.5rem;
+  }
+
+  .primary-heading {
+    top: 70px;
+    left: 20px;
+    font-size: 1.2rem;
+  }
+
+  .main-btn {
+    top: 200px;
+    left: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .coffee-info {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .info-box {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  #our-product {
+    flex-direction: column;
+  }
+
+  .img {
+    width: 100%;
+    height: auto;
+  }
+
+  .title {
+    font-size: 2rem;
+    transform: translateX(0);
+  }
+
+  .line {
+    transform: translateX(0);
+  }
+
+  .as-seen-on {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .brands {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .coffee-container {
+    flex-direction: column;
+  }
+
+  .img-2 {
+    width: 100%;
+    height: auto;
+  }
+
+  .title-two {
+    font-size: 2rem;
+  }
+
+  .shop-section {
+    padding: 10px;
+  }
+
+  .products {
+    padding: 10px;
+  }
+
+  .title-three {
+    font-size: 2rem;
+    margin-left: 0;
+    margin-bottom: 2rem;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+
+  footer {
+    height: auto;
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  footer .container {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
